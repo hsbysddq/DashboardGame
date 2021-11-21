@@ -1,0 +1,104 @@
+body {
+    position: relative;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    width: 100vw;
+    height: 100vh;
+    background-color: #fafafa;
+}
+
+.vektor img {
+    left: 8%;
+    position: absolute;
+    bottom: 35%;
+    width: 43%;
+}
+
+p {
+    position: absolute;
+    top: 4%;
+    left: 50%;
+    color: black;
+}
+
+
+.register-form {
+    position: absolute;
+    right: 7%;
+    color: white;
+    top: 14%;
+    padding: 20px;
+    background-color: #ff9566;
+    border-radius: 10px;
+}
+
+.card-title {
+    font-weight: 900;
+    padding-top: 20px;
+}
+
+ul {
+    margin: 0;
+}
+
+nav {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    background: #86CFEF;
+    width: 100%;
+}
+
+nav .menubar {
+    display: flex;
+
+}
+
+nav .menubar .logo {
+    font-family: "Open Sans", sans-serif;
+    font-size: 31px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    margin-left: 3%;
+}
+
+nav .menubar .sign-up {
+    font-family: "Open Sans", sans-serif;
+    font-size: 15px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    margin-left: 72%;
+}
+
+nav .menubar .join {
+    font-family: "Open Sans", sans-serif;
+    font-size: 15px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    margin-left: 3%;
+}
+
+nav .menubar li {
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+
+nav .menubar li a {
+    text-decoration: none;
+    color: white;
+}
+
+.ractangle {
+    position: absolute;
+    width: 100%;
+    bottom: -35%;
+    left: 0;
+}
+
+.svg svg {
+    position: absolute;
+    bottom: -7%;
+}
