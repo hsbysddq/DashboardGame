@@ -116,13 +116,13 @@ exports.login = async (req, res, next) => {
         const token = jwt.sign({ userId: isExist.id, roleName: isExist.role.name }, process.env.JWT_TOKEN, {expiresIn: '7 days'})
 
         // kirim token sebagai response
-        // return res.status(200).json({
-        //     message: 'success login',
-        //     code: 200,
-        //     data: {
-        //         token
-        //     }
-        // })    
+        return res.status(200).json({
+            message: 'success login',
+            code: 200,
+            data: {
+                token
+            }
+        })    
 
         // return res.status(301).redirect('/koceng');
 

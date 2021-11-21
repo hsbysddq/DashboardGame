@@ -19,15 +19,16 @@ const app = express()
 // menggunakan middleware express.json dan express.urlencoded
 app.use(express.json())
 app.use(express.urlencoded({extended: false}))
-// app.use(session({
-//     secret: SESSION_SECRET,
-//     resave: false,
-//     saveUninitialized: false
-// }))
-// app.use(flash())
 
-// app.use(passport.initialize())
-// app.use(passport.session())
+app.use(session({
+    secret: SESSION_SECRET,
+    resave: false,
+    saveUninitialized: false
+}))
+app.use(flash())
+
+app.use(passport.initialize())
+app.use(passport.session())
 
 
 // configure template engine using ejs
