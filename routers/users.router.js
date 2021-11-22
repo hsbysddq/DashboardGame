@@ -10,13 +10,7 @@ const { verify } = require('../middlewares/verify.middleware')
 router.get('/register', viewRegister)
 router.post('/register', validate(registerSchema), register)
 
-router.post('/login/web', passport.authenticate('local', {
-    successRedirect: '/dashboard',
-    failureRedirect: '/login',
-    failureFlash: true
-}))
-
-router.post('/login', login)
+router.post('/login/web', login)
 router.get('/login', viewLogin)
 
 module.exports = router

@@ -1,4 +1,4 @@
-const Room = require("../models/Room.model.js");
+const Room = require("../models/room.model.js");
 
 exports.room = (req, res, next) => { 
 };

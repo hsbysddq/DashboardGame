@@ -1,39 +1,24 @@
-const sequelize = require('./sequelize');
 const { Model, DataTypes } = require("sequelize");
+const sequelize = require("./sequelize");
 
 class Room extends Model {}
 
-User.init(
-    {
-        id: {
-            type: DataTypes.INTEGER,
-            primaryKey: true,
-            autoIncrement: true,
-            allowNull: false
-        },
-        name: {
-            type: DataTypes.STRING
-        },
-        createdAt: {
-            type: DataTypes.DATE,
-            defaultValue: new Date()
-        },
-        updatedAt: {
-            type: DataTypes.DATE,
-            defaultValue: new Date()
-        },
-        deletedAt: {
-            type: DataTypes.DATE,
-            allowNull: true
-        }
+Room.init(
+  {
+    name: {
+      type: DataTypes.STRING,
+      allowNull: false,
     },
-    {
-        sequelize,
-        tableName: "room",
-        modelName: 'room',
-        timestamps: true,
-        paranoid: true
-    }
+    flag: {
+      type: DataTypes.STRING,
+      allowNull: false,
+    },
+  },
+  {
+    sequelize,
+    tableName: "rooms",
+    modelName: "rooms",
+  }
 );
 
 module.exports = Room;
